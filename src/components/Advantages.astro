@@ -1,0 +1,22 @@
+---
+import {Image} from 'astro:assets'
+import disposable from '../assets/images/mainPage/disposable.svg'
+import guarantee from '../assets/images/mainPage/guarantee.svg'
+import topMasters from '../assets/images/mainPage/top-masters.svg'
+---
+<section class="bg-gray-50">
+    <div class="container mx-auto flex flex-col justify-around">
+        <div class="mb-9 text-center">
+            <Image src={disposable} alt="alt text" class="mx-auto w-24 mb-9"/>
+            <span class="text-neutral-600 text-2xl">Jednorazowe materiały</span>
+        </div>
+        <div>
+            <Image src={disposable} alt="alt text" class="mx-auto w-24 mb-9"/>
+            <span>Jednorazowe materiały</span>
+        </div>
+        <div>
+            <Image src={disposable} alt="alt text"/>
+            <span>Jednorazowe materiały</span>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets'
+import { getImage } from "astro:assets";
+import mainBackground from '../assets/images/mainPage/mainBackground.png'
+const optimizeBackground = await getImage({src: mainBackground, format: 'avif'})
+---
+<section style={`background-image: url(${optimizeBackground.src});`} class="bg-cover bg-center h-dvh">
+Hello world
+</section>

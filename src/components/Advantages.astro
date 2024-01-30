@@ -4,19 +4,19 @@ import disposable from '../assets/images/mainPage/disposable.svg'
 import guarantee from '../assets/images/mainPage/guarantee.svg'
 import topMasters from '../assets/images/mainPage/top-masters.svg'
 ---
-<section class="bg-gray-50">
-    <div class="container mx-auto flex flex-col justify-around">
-        <div class="mb-9 text-center">
-            <Image src={disposable} alt="alt text" class="mx-auto w-24 mb-9"/>
-            <span class="text-neutral-600 text-2xl">Jednorazowe materiały</span>
+<section class="bg-neutral-50 dark:bg-gray-900  p-6 sm:p-14">
+    <div class="container  flex flex-col sm:flex-row mx-auto justify-around">
+        <div class="text-center mb-5 sm:mb-0">
+            <Image src={disposable} alt="Jednorazowe materiały" class="mx-auto mb-4 size-25 sm:size-28 md:size-32"/>
+            <span class="text-neutral-600 dark:text-white text-2xl 2xl:text-3xl">Jednorazowe materiały</span>
         </div>
-        <div>
-            <Image src={disposable} alt="alt text" class="mx-auto w-24 mb-9"/>
-            <span>Jednorazowe materiały</span>
+        <div class="text-center mb-5 sm:mb-0">
+            <Image src={guarantee} alt="Gwarancja na pokrycie" class="mx-auto mb-4 size-25 sm:size-28 md:size-32"/>
+            <span class="text-neutral-600 dark:text-white text-2xl 2xl:text-3xl">Gwarancja na pokrycie</span>
         </div>
-        <div>
-            <Image src={disposable} alt="alt text"/>
-            <span>Jednorazowe materiały</span>
+        <div class="text-center">
+            <Image src={topMasters} alt="Najlepsi mistrzowie" class="mx-auto mb-4 size-25 sm:size-28 md:size-32"/>
+            <span class="text-neutral-600 dark:text-white text-2xl 2xl:text-3xl">Najlepsi mistrzowie</span>
         </div>
     </div>
 </section>

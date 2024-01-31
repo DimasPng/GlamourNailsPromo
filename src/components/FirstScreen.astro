@@ -1,9 +1,60 @@
 ---
-import { Image } from 'astro:assets'
-import { getImage } from "astro:assets";
-import mainBackground from '../assets/images/mainPage/mainBackground.png'
-const optimizeBackground = await getImage({src: mainBackground, format: 'avif'})
+import {Image} from 'astro:assets'
+import logo from '../assets/images/mainPage/logo.png';
+import stars from '../assets/images/mainPage/stars.svg';
+import daynight from '../assets/images/mainPage/daynight.svg';
 ---
-<section style={`background-image: url(${optimizeBackground.src});`} class="bg-cover bg-center h-dvh">
-Hello world
+<section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center h-dvh p-7 text-neutral-800 pt-9 dark:text-white">
+    <div class="container mx-auto">
+        <div class="flex items-center mb-9">
+            <Image src={logo} width="90" height="90" alt="Levirin's saloon logo" class="mr-3.5"/>
+            <div class="flex bg-white items-center p-3.5 rounded-lg shadow-lg mr-3.5">
+                <div class="bg-green-600 rounded-lg text-white mr-3 text-4xl font-pt-sans font-semibold tracking-tight pb-3 py-1.5 px-2.5">
+                    4.9
+                </div>
+                <div class="pt-2">
+                    <Image src={stars} alt="Star rating" class="mb-2"/>
+                    <div class="font-pt-sans text-lg">246 ocen</div>
+                </div>
+
+            </div>
+            <div class="flex flex-col justify-center">
+                <button id="nightMode">
+                    <Image src={daynight} alt="Toggle themes" class="mb-3"/>
+                </button>
+                <button class="uppercase underline">pl</button>
+            </div>
+            <!--<div class="bg-white p-4 rounded-lg">-->
+            <!--    <div class="mb-2 text-xl text-neutral-600">Levirin</div>-->
+            <!--    <div class="flex">-->
+            <!--        <div class="px-1.5 bg-green-600 text-white rounded mr-2 font-semibold font-roboto">4.9</div>-->
+            <!--        <Image src={stars} alt="Star rating" />-->
+            <!--    </div>-->
+            <!--</div>-->
+        </div>
+        <div class="mb-7">
+            <h1 class="mb-4 text-2xl dark:text-amber-600">SALON PIĘKNOŚCI LEVIRIN</h1>
+            <div class="text-lg text-balance mb-8">
+                <p class="mb-1 leading-tight">Generała Romualda Traugutta 95, 50-417 Wrocław</p>
+                <p class="mb-1"><strong>Godziny otwarcia:</strong> 08:00 - 21:00</p>
+                <p><strong>Telefon:</strong> <a href="tel:+48517359446">+48 (517) 359-446</a></p>
+            </div>
+            <h2 class="text-balance font-bold text-3xl mb-8">Manicure z gwarancją w studiu Leverin</h2>
+            <div class="text-balance text-xl font-semibold">Akcja: Otrzymaj 60% zniżki przy pierwszej wizycie u
+                wykwalifikowanego mistrza
+            </div>
+        </div>
+        <a class="block text-center text-white rounded-3xl bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg">Zapisać
+            się</a>
+    </div>
 </section>
+
+<script>
+    // const nightModeButton = document.querySelector('#nightMode');
+    //
+    // nightModeButton.addEventListener('click', () => {
+    //     document.documentElement.classList.toggle('dark');
+    // })
+
+</script>
+

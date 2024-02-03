@@ -1,6 +1,5 @@
 ---
 import {Image} from 'astro:assets'
-import disposable from '../assets/images/mainPage/disposable.svg'
 import review1 from '../assets/images/mainPage/review1.png'
 import review2 from '../assets/images/mainPage/review2.png'
 import review3 from '../assets/images/mainPage/review3.png'
@@ -10,11 +9,10 @@ import review6 from '../assets/images/mainPage/review6.png'
 import play from '../assets/images/mainPage/play.png'
 --- 
 
-<section class="bg-neutral-50 p-6 sm:p-14">
+<section class="bg-neutral-50 dark:bg-gray-900 p-6 sm:p-14">
     <div class="container flex flex-col items-center justify-around sm:flex-row mx-auto sm:justify-between">
-        <span class="text-neutral-600 text-lg sm:text-2xl leading-tight mb-4">74% naszych klientek<br/>przychodzi z polecenia.</span>
-        <a href="https://www.instagram.com/" target="_blank" class="text-white text-sm text-center h-6 w-36 bg-pink-500 rounded-2xl">
-            <button type="button">Instagram</button></a>
+        <span class="text-neutral-600 text-lg sm:text-2xl leading-tight mb-4  dark:text-white">74% naszych klientek<br/>przychodzi z polecenia.</span>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white text-sm text-center h-6 w-36 bg-pink-600 hover:bg-pink-500 hover:-translate-y-1 shadow-md hover:shadow-pink-800/50 dark:hover:shadow-pink-300 rounded-2xl mb-4">Instagram</a>
     </div>
 
     <div class="flex flex-wrap items-center mx-auto">
@@ -54,15 +52,7 @@ import play from '../assets/images/mainPage/play.png'
                 <Image class="size-10 sm:size-14 md:size-20 lg:size-24 xl:size-28 2xl:size-32 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={play} alt="Video button"/>
             </a>
         </div>
-
-          
-
-
-
-
-
-
-
+    
         </section>
 
 

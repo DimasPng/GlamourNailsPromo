@@ -3,35 +3,36 @@ import {Image} from 'astro:assets'
 import { Icon } from 'astro-icon/components';
 import logo from '../assets/images/mainPage/logoMax.png';
 import stars from '../assets/images/mainPage/stars.svg';
+import bestChoice from '../assets/images/mainPage/bestChoise.svg';
 ---
-<section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center h-dvh p-7 text-neutral-800 pt-9 dark:text-slate-50">
-    <div class="absolute inset-0 dark:bg-slate-800 opacity-95 z-10"></div>
+<section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center h-svh p-7 text-neutral-800 pt-9 dark:text-slate-50">
+    <div class="absolute inset-0 dark:bg-gray-900 md:opacity-90 h-svh z-10"></div>
     <div class="container mx-auto relative z-20">
         <div class="flex items-center mb-9 relative">
             <Image src={logo} width="90" height="90" alt="Levirin's saloon logo" class="mr-3.5 rounded-lg shadow"/>
-            <div class="flex bg-white dark:bg-slate-600 items-center p-3.5 rounded-lg shadow-lg dark:shadow-none mr-3.5">
-                <div class="bg-green-600 dark:text-slate-200 rounded-lg text-white mr-3 text-4xl font-pt-sans font-semibold tracking-tight pb-3 py-1.5 px-2.5">
+            <div class="hidden md:block p-3.5 rounded-lg mr-2.5">
+                <div class="mb-2 text-xl text-neutral-600 dark:text-white">Levirin</div>
+                <div class="flex">
+                    <div class="px-1.5 bg-green-600 text-white rounded mr-2 font-pt-sans font-semibold tracking-tight dark:text-white">4.9</div>
+                    <Image src={stars} alt="Star rating" />
+                </div>
+            </div>
+            <div class="flex bg-white dark:bg-slate-600 items-center p-3.5 md:p-3 rounded-lg shadow-lg dark:shadow-none mr-3.5">
+                <div class="bg-green-600 dark:text-slate-200 rounded-lg text-white mr-3 text-4xl font-pt-sans font-semibold tracking-tight pb-3 py-1.5 px-2.5 md:text-neutral-600 md:p-0 md:text-4xl md:bg-white md:dark:bg-slate-600">
                     4.9
                 </div>
                 <div class="pt-2">
-                    <Image src={stars} alt="Star rating" class="mb-2"/>
-                    <div class="font-pt-sans text-lg dark:text-slate-200">246 ocen</div>
+                    <Image src={stars} alt="Star rating" class="mb-2 md:w-16 md:mb-0"/>
+                    <div class="font-pt-sans text-lg dark:text-slate-200 md:text-base">246 ocen</div>
                 </div>
-
             </div>
+            <div class="hidden md:block"></div>
             <div class="flex flex-col justify-center absolute right-1">
                 <button id="nightMode">
                     <Icon name="daynight" class="size-8 mb-3.5" />
                 </button>
                 <button class="uppercase underline dark:text-slate-200">pl</button>
             </div>
-            <!--<div class="bg-white p-4 rounded-lg">-->
-            <!--    <div class="mb-2 text-xl text-neutral-600">Levirin</div>-->
-            <!--    <div class="flex">-->
-            <!--        <div class="px-1.5 bg-green-600 text-white rounded mr-2 font-semibold font-roboto">4.9</div>-->
-            <!--        <Image src={stars} alt="Star rating" />-->
-            <!--    </div>-->
-            <!--</div>-->
         </div>
         <div class="mb-9">
             <h1 class="mb-4 text-2xl">SALON PIĘKNOŚCI LEVIRIN</h1>
@@ -40,14 +41,14 @@ import stars from '../assets/images/mainPage/stars.svg';
                 <p class="mb-1"><span class="font-semibold dark:font-normal">Godziny otwarcia:</span> 08:00 - 21:00</p>
                 <p><span class="font-semibold dark:font-normal">Telefon:</span> <a href="tel:+48517359446">+48 (517) 359-446</a></p>
             </div>
-            <h2 class="text-balance font-bold text-3xl mb-8">Manicure z gwarancją w studiu Leverin</h2>
-            <div class="text-balance text-xl"><span class="font-bold">Akcja:</span> Otrzymaj 60% zniżki przy pierwszej wizycie u
+            <h2 class="text-balance font-bold text-3xl mb-8 max-w-96">Manicure z gwarancją w studiu Leverin</h2>
+            <div class="text-balance text-xl max-w-96"><span class="font-bold">Akcja:</span> Otrzymaj 60% zniżki przy pierwszej wizycie u
                 wykwalifikowanego mistrza!
             </div>
         </div>
-        <a class="mb-6 block text-center text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg">Zapisać
+        <a class="mb-6 w-64 block text-center text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg">Zapisać
             się</a>
-        <Icon name="arrowDown" class="size-9 mx-auto" />
+        <Icon name="arrowDown" class="size-9 mx-auto cursor-pointer" />
     </div>
 </section>
 

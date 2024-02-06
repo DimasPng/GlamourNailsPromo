@@ -8,7 +8,7 @@ import bestChoice from '../assets/images/mainPage/bestChoise.svg';
 <section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center h-svh p-7 text-neutral-800 pt-9 dark:text-slate-50 md:flex md:items-center md:transform  relative">
     <div class="absolute inset-0 dark:bg-gray-900 opacity-90 h-svh z-10"></div>
     <div class="container mx-auto relative z-20 xl:pl-56 md:-translate-y-2">
-        <div class="flex items-center mb-9 md:mb-16 relative">
+        <div class="flex items-center mb-9 md:mb-16">
             <Image src={logo} width="90" height="90" alt="Levirin's saloon logo" class="mr-3.5 rounded-lg shadow"/>
             <div class="hidden md:block p-3.5 rounded-lg mr-2.5">
                 <div class="mb-2 text-xl text-neutral-600 dark:text-white">Levirin</div>
@@ -23,14 +23,14 @@ import bestChoice from '../assets/images/mainPage/bestChoise.svg';
                 </div>
                 <div class="pt-2">
                     <Image src={stars} alt="Star rating" class="mb-2 md:w-16 md:mb-0"/>
-                    <div class="font-pt-sans text-lg dark:text-slate-200 md:text-base">246 ocen</div>
+                    <div class="font-pt-sans leading-tight sm:text-lg dark:text-slate-200 text-sm">246 ocen</div>
                 </div>
             </div>
             <div class="hidden sm:p-3.5 sm:flex sm:flex-col sm:items-center bg-white rounded-lg shadow-lg dark:bg-slate-600 dark:shadow-none md:p-1.5">
                 <Image src={bestChoice} alt="Star rating" class="size-10 sm:mb-0.5 md:mb-0"/>
                 <span class="font-pt-sans text-sm dark:text-white md:text-xs text-balance">Best choice 2024</span>
             </div>
-            <div class="flex flex-col md:flex-row justify-center absolute right-1">
+            <div class="flex flex-col md:flex-row justify-center ml-auto mr-4">
                 <button class="hidden md:block mr-5 uppercase dark:text-slate-200"><span class="underline cursor-pointer">pl</span> / <span class="cursor-pointer">ua</span></button>
                 <button id="nightMode">
                     <Icon name="daynight" class="size-8 mb-3.5" />
@@ -54,7 +54,7 @@ import bestChoice from '../assets/images/mainPage/bestChoise.svg';
             się</a>
     </div>
     <a href="#" class="z-20">
-        <Icon name="arrowDown" class="size-9 cursor-pointer mx-auto absolute bottom-2 md:size-12 left-1/2 transform -translate-x-1/2" />
+        <Icon name="arrowDown" class="size-9 cursor-pointer mx-auto absolute bottom-0.5 sm:bottom-1 md:size-12 left-1/2 transform -translate-x-1/2" />
     </a>
 </section>
 

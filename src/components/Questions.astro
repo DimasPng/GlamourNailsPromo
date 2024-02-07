@@ -1,0 +1,22 @@
+---
+import {Image} from 'astro:assets'
+import Questions from '../assets/images/mainPage/Questions.png'
+import Form from '../assets/images//mainPage/Form.png'
+
+---
+
+
+<section class="p-6 sm:p-14">
+    <div class="container mx-auto relative text-center justify-around">
+
+        <Image class="" src={Questions} alt="questions form"/>
+        
+        <span class="text-white font-sans absolute top-14 left-36  ">Pozostały jakieś pytania?</span>
+      
+    
+        <span class="text-white font-sans absolute top-24 left-36">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie.</span>
+        
+        <Image class="absolute top-40 left-36" src={Form} alt="questions form"/>
+
+    </div>
+</section>

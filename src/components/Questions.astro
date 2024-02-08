@@ -1,22 +1,29 @@
 ---
 import {Image} from 'astro:assets'
 import Questions from '../assets/images/mainPage/Questions.png'
-import Form from '../assets/images//mainPage/Form.png'
+import Form1 from '../assets/images//mainPage/Form1.png'
 
 ---
 
 
 <section class="p-6 sm:p-14">
-    <div class="container mx-auto relative text-center justify-around">
-
-        <Image class="" src={Questions} alt="questions form"/>
-        
-        <span class="text-white font-sans absolute top-14 left-36  ">Pozostały jakieś pytania?</span>
-      
     
-        <span class="text-white font-sans absolute top-24 left-36">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie.</span>
-        
-        <Image class="absolute top-40 left-36" src={Form} alt="questions form"/>
+        <div class="container flex flex-row mx-auto relative">
+            <Image class="w-full h-full" src={Questions} alt="questions form"/>
+            
+            <div class="flex absolute top-0 left-0 sm:top-[10%] sm:left-[10%]">
+                <span class="text-white text-sm lg:text-xl xl:text-2xl 2xl:text-4xl">Pozostały jakieś pytania?</span>
+             </div>   
 
-    </div>
+            <div class="flex absolute top-4 left-0 sm:top-[20%] sm:left-[10%]">
+                <span class="text-white text-xs lg:text-sm ">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie.</span>
+            </div>
+
+            <div class="flex absolute top-[50%] left-0 sm:top-[30%] sm:left-[10%] ">
+                <Image class="w-1/3 h-1/3 sm:w-[50%] sm:h-[50%] lg:w-[75%] lg:h-[75%]" src={Form1} alt="questions form"/>
+            </div>
+       </div>
+    
+    
+    
 </section>

@@ -1,6 +1,84 @@
 ---
 
 ---
-<section>
-hello!
+<section class="p-6 sm:p-14 dark:text-gray-200 dark:bg-gray-900">
+    <h2 class="uppercase text-3xl font-bold mb-2.5">CENNIK</h2>
+    <div class="border p-4">
+        <div class="mb-6">
+            <h3 class="mb-3 text-2xl font-medium">Manicure</h3>
+            <ul class="max-w-96 text-lg">
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybryda</span><span>115 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Uzupełnienie żelowe</span><span>135 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Żel na naturalnej płycie</span><span>130 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Przedłużanie paznokci</span><span>170 zł</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-6">
+            <h3 class="mb-3 text-2xl font-medium">Brwi</h3>
+            <ul class="max-w-96 text-lg">
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Henna + Regulacja</span><span>60 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Laminowanie Brwi</span><span>120 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Laminowanie Rzęs</span><span>125 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Architektura Brwi</span><span>130 zł</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-6">
+            <h3 class="mb-3 text-2xl font-medium">Rzęsy</h3>
+            <ul class="max-w-96 text-lg">
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybryda</span><span>120 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Uzupełnienie żelowe</span><span>110 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Żel na naturalnej płycie</span><span>50 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Przedłużanie paznokci</span><span>50 zł</span>
+                </li>
+            </ul>
+        </div>
+        <div id="section-price-4" class="mb-6 hidden">
+            <h3 class="mb-3 text-2xl font-medium">Pedicure</h3>
+            <ul class="max-w-96 text-lg">
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Frezarkowy</span><span>110 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybrydowy</span><span>110 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Pełny</span><span>150 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Spa</span><span>130 zł</span>
+                </li>
+            </ul>
+        </div>
+        <div id="section-price-5" class="hidden mb-6">
+            <h3 class="mb-3 text-2xl font-medium">Farbowanie</h3>
+            <ul class="max-w-96 text-lg">
+                <li class="flex justify-between border-b border-dashed mb-4"><span>Frezarkowy</span><span>110 zł</span>
+                </li>
+                <li class="flex justify-between border-b border-dashed"><span>Hybrydowy</span><span>110 zł</span>
+                </li>
+            </ul>
+        </div>
+        <button id="open-full-price" class="mb-2.5 mx-auto md:w-72 block text-center font-pt-sans text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-2 px-5 uppercase md:text-xl">Pokaż wszystkie ceny</button>
+    </div>
 </section>
+
+<script>
+    const section4 = document.getElementById('section-price-4');
+    const section5 = document.getElementById('section-price-5');
+    const openBtn = document.getElementById('open-full-price');
+
+    openBtn.addEventListener('click', () => {
+        section4.classList.toggle('hidden');
+        section5.classList.toggle('hidden');
+        openBtn.textContent = openBtn.textContent === "Pokaż wszystkie ceny" ? "Ukryj ceny" : "Pokaż wszystkie ceny";
+    })
+
+
+</script>

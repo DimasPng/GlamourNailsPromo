@@ -1,71 +1,98 @@
 ---
-
+import {Image} from 'astro:assets';
+import priceImg from '../assets/images/mainPage/price-img.png';
+import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.png';
 ---
-<section class="p-6 sm:p-14 dark:text-gray-200 dark:bg-gray-900">
-    <h2 class="uppercase text-3xl font-bold mb-2.5">CENNIK</h2>
-    <div class="border p-4">
-        <div class="mb-6">
-            <h3 class="mb-3 text-2xl font-medium">Manicure</h3>
-            <ul class="max-w-96 text-lg">
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybryda</span><span>115 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Uzupełnienie żelowe</span><span>135 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Żel na naturalnej płycie</span><span>130 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Przedłużanie paznokci</span><span>170 zł</span>
-                </li>
-            </ul>
+<section class="p-6 dark:text-gray-200 dark:bg-gray-900">
+    <div class="mx-auto max-w-[1140px]">
+        <h2 class="uppercase text-3xl font-bold mb-2.5 text-center lg:text-start">CENNIK</h2>
+    </div>
+    <div class="max-w-[71.25rem] mx-auto p-6 lg:p-12 border relative">
+        <div id="grid-wrapper"
+             class="lg:grid grid-rows-3 lg:gap-x-32 lg:grid-flow-dense justify-center">
+            <div class="mb-6 max-w-[28rem] lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:w-[20rem] xl:w-[28rem] mx-auto">
+                <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start lg:mx-auto font-medium text-center">
+                    Manicure</h3>
+                <ul class="text-lg mx-auto">
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Hybryda</span><span>115 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Uzupełnienie żelowe</span><span>135 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Żel na naturalnej płycie</span><span>130 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Przedłużanie paznokci</span><span>170 zł</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6 max-w-[28rem] lg:w-[20rem] xl:w-[28rem] mx-auto">
+                <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start font-medium text-center">Brwi</h3>
+                <ul class="text-lg mx-auto">
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Henna + Regulacja</span><span>60 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Laminowanie Brwi</span><span>120 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Laminowanie Rzęs</span><span>125 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Architektura Brwi</span><span>130 zł</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-6 lg:mb-0 max-w-[28rem] lg:w-[20rem] mx-auto xl:w-[28rem] lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5">
+                <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start font-medium text-center">Rzęsy</h3>
+                <ul class="text-lg mx-auto lg:mb-16">
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Hybryda</span><span>120 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Uzupełnienie żelowe</span><span>110 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Żel na naturalnej płycie</span><span>50 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Przedłużanie paznokci</span><span>50 zł</span>
+                    </li>
+                </ul>
+                <a class="hidden lg:block uppercase mb-6 w-64 md:w-72 block mx-auto text-center text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg md:text-xl">Cała
+                    cena</a>
+            </div>
+            <div id="section-price-4"
+                 class="mb-6 lg:w-[20rem] mx-auto max-w-[28rem] xl:w-[28rem] hidden lg:block lg:col-start-2 lg:col-end-2 lg:row-start-1 lg:row-end-1">
+                <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start font-medium text-center">Pedicure</h3>
+                <ul class="text-lg mx-auto">
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Frezarkowy</span><span>110 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Hybrydowy</span><span>110 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Pełny</span><span>150 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8"><span>Spa</span><span>130 zł</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="section-price-5"
+                 class="hidden lg:block mb-6 lg:mb-0 max-w-[28rem] lg:w-[20rem] mx-auto xl:w-[28rem] lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-5">
+                <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start font-medium text-center">Farbowanie</h3>
+                <ul class="text-lg mx-auto mb-9">
+                    <li class="flex justify-between border-b border-dashed mb-4 lg:mb-8">
+                        <span>Frezarkowy</span><span>110 zł</span>
+                    </li>
+                    <li class="flex justify-between border-b border-dashed"><span>Hybrydowy</span><span>110 zł</span>
+                    </li>
+                </ul>
+                <div class="hidden lg:block object-cover relative">
+                    <Image src={grayBackground} alt="Background 1" class="hidden lg:inline absolute top-14 -left-12 -z-10"/>
+                    <Image src={priceImg} alt="Hairdresser" class="mx-auto"/>
+                </div>
+            </div>
+            <Image src={grayBackground} alt="Background 2" class="hidden lg:inline absolute bottom-0 right-0 -z-10"/>
+            <button id="open-full-price"
+                    class="lg:hidden mb-2.5 mx-auto md:w-72 block text-center font-pt-sans text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-2 px-5 uppercase md:text-xl">
+                Pokaż wszystkie ceny
+            </button>
         </div>
-        <div class="mb-6">
-            <h3 class="mb-3 text-2xl font-medium">Brwi</h3>
-            <ul class="max-w-96 text-lg">
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Henna + Regulacja</span><span>60 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Laminowanie Brwi</span><span>120 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Laminowanie Rzęs</span><span>125 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Architektura Brwi</span><span>130 zł</span>
-                </li>
-            </ul>
-        </div>
-        <div class="mb-6">
-            <h3 class="mb-3 text-2xl font-medium">Rzęsy</h3>
-            <ul class="max-w-96 text-lg">
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybryda</span><span>120 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Uzupełnienie żelowe</span><span>110 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Żel na naturalnej płycie</span><span>50 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Przedłużanie paznokci</span><span>50 zł</span>
-                </li>
-            </ul>
-        </div>
-        <div id="section-price-4" class="mb-6 hidden">
-            <h3 class="mb-3 text-2xl font-medium">Pedicure</h3>
-            <ul class="max-w-96 text-lg">
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Frezarkowy</span><span>110 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Hybrydowy</span><span>110 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Pełny</span><span>150 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Spa</span><span>130 zł</span>
-                </li>
-            </ul>
-        </div>
-        <div id="section-price-5" class="hidden mb-6">
-            <h3 class="mb-3 text-2xl font-medium">Farbowanie</h3>
-            <ul class="max-w-96 text-lg">
-                <li class="flex justify-between border-b border-dashed mb-4"><span>Frezarkowy</span><span>110 zł</span>
-                </li>
-                <li class="flex justify-between border-b border-dashed"><span>Hybrydowy</span><span>110 zł</span>
-                </li>
-            </ul>
-        </div>
-        <button id="open-full-price" class="mb-2.5 mx-auto md:w-72 block text-center font-pt-sans text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-2 px-5 uppercase md:text-xl">Pokaż wszystkie ceny</button>
     </div>
 </section>
 
@@ -79,6 +106,14 @@
         section5.classList.toggle('hidden');
         openBtn.textContent = openBtn.textContent === "Pokaż wszystkie ceny" ? "Ukryj ceny" : "Pokaż wszystkie ceny";
     })
-
-
 </script>
+
+<style>
+    @media (min-width: 1024px) {
+        #grid-wrapper {
+            grid-template-columns: repeat(2, minmax(0, 28rem));
+            grid-auto-rows: 10rem;
+        }
+    }
+
+</style>

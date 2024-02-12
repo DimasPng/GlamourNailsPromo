@@ -1,0 +1,41 @@
+---
+import {Image} from 'astro:assets'
+import rectangle from '../assets/images/mainPage/rectangle.avif'
+import map from '../assets/images/mainPage/map.avif'
+import cea from '../assets/images/mainPage/cea .avif'
+---
+
+<footer class="container mx-auto bg-blue-500">
+
+
+    <div class="flex h-[30rem] max-w-[1300pz] relative">
+
+    <Image class="" src={rectangle} alt="Rectangle"/>
+    <Image class="" src={map} alt="Map"/>
+
+
+
+
+
+    <Image class="size-24 top-10 left-10 absolute" src={cea} alt="Quality mark"/>
+
+
+    <h2 class="absolute top-40 left-10 text-white">SALON PIĘKNOŚCI LEVIRIN</h2>
+    <div class="absolute top-60 left-10 text-white">
+    <h3>Generała Romualda Traugutta 95, 50-417 Wrocław</h3>
+    <h3>Godziny otwarcia: 08:00 - 21:00 </h3>
+    <h3>Telefon: +48 (517) 359-446</h3>
+</div>
+
+<button class="absolute text-base top-96 left-10 w-[160px] h-10 text-center rounded-2xl text-white bg-pink-600"
+type="submit">Zapisać się</button>
+
+
+
+
+    </div>
+
+    
+
+
+</footer>

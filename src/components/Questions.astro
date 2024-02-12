@@ -1,55 +1,18 @@
----
-import {Image} from 'astro:assets'
-import Questions from '../assets/images/mainPage/Questions.png'
 
-
----
-
-
-<section class=" dark:bg-gray-900 p-6 sm:p-14">
-    
-        <div class="container flex flex-row mx-auto relative">
-            <Image class="w-full h-full" src={Questions} alt="questions form"/>
-            
-            <div class="absolute top-0 left-0 sm:top-[10%] sm:left-[10%]">
-                <span class="text-white text-sm lg:text-xl xl:text-2xl 2xl:text-4xl">Pozostały jakieś pytania?</span>
-             </div>   
-
-            <div class="absolute top-4 left-0 sm:top-[20%] sm:left-[10%]">
-                <span class="text-white text-[0.5rem] lg:text-sm">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie.</span>
-            </div>
-
-            <div class="mx-auto absolute top-[40%] left-0 bg-[#de4c90] w-1/2 h-1/2 overflow-auto sm:ml-[10%]">
-                           
-
-            <form class="p-1 sm:p-4">
-                <div class="md:mb-4">
-                    <input class=" md:text-sm lg:text-lg w-full text-xs shadow-lg border rounded-lg text-gray-700 leading-tight focus:outline-none focus:shadow-2xl"
-                     id="username" type="text" placeholder="Twoje imię">
-                </div>
-
-                <div class="mb-1 md:mb-4">
-                    <input class="md:text-sm lg:text-lg w-full text-xs shadow-lg border rounded-lg text-gray-700 leading-tight focus:outline-none focus:shadow-2xl"
-                    id="phone" type="tel" placeholder="Twój numer telefonu">
-                </div>
-
-                <div class="mb-1 md:mb-4">
-                    <button class="lg:text-lg w-full text-xs bg-[#4cb274] hover:bg-green-700  text-white font-bolt rounded-lg focus:outline-none  focus:shadow-2xl"
-                    type="button">Wyślij</button>
-                </div>
-
-                <div>
-                    <input class="h-3 w-3 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded-lg leading-tight" type="checkbox" id="agree">
-                    <label class="text-white text-xs" for="agree">zasubskrybowałam Instagram, -20% zniżki</label>
-                </div>
-            </form>
-
-
-
-
-            </div>
-       </div>
-    
-    
-    
+<section id="question" class="bg-image-mobile-question md:bg-image-desktop-question bg-center bg-cover h-[30rem] p-6 sm:p-14">
+    <h2 class="text-white text-2xl md:text-4xl mb-4">Pozostały jakieś pytania?</h2>
+    <h3 class="text-white text-sm lg:text-base mb-10">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie</h3>
+    <form class="bg-[#de4c90] p-6 md:max-w-[450px] lg:max-w-[550px] xl:max-w-[640px] rounded-md" action="" method="">
+        <input class="p-2.5 mb-4 lg:text-lg w-full text-sm shadow-lg border rounded-lg text-gray-900 leading-tight focus:outline-none focus:shadow-2xl"
+             name="name" type="text" placeholder="Twoje imię">
+        <input class="p-2.5 mb-4 lg:text-lg w-full text-sm shadow-lg border rounded-lg text-gray-900 leading-tight focus:outline-none focus:shadow-2xl"
+            name="phone" type="tel" placeholder="Twój numer telefonu">
+        <button class="p-2.5 w-full text-base bg-[#4cb274] hover:bg-green-700 text-white font-bolt rounded-lg focus:outline-none focus:shadow-2xl"
+            type="submit">Wyślij</button>
+        <div>
+            <input class="h-3 w-3 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded-lg leading-tight" type="checkbox" id="agree">
+            <label class="text-white text-xs" for="agree">zasubskrybowałam Instagram, -20% zniżki</label>
+        </div>
+    </form>
 </section>
+

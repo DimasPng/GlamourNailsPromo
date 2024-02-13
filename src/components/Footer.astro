@@ -2,40 +2,27 @@
 import {Image} from 'astro:assets'
 import rectangle from '../assets/images/mainPage/rectangle.avif'
 import map from '../assets/images/mainPage/map.avif'
-import cea from '../assets/images/mainPage/cea .avif'
+import CEA from '../assets/images/mainPage/CEA.png'
 ---
 
-<footer class="container mx-auto bg-blue-500">
-
-
-    <div class="flex h-[30rem] max-w-[1300pz] relative">
-
-    <Image class="" src={rectangle} alt="Rectangle"/>
-    <Image class="" src={map} alt="Map"/>
-
-
-
-
-
-    <Image class="size-24 top-10 left-10 absolute" src={cea} alt="Quality mark"/>
-
-
-    <h2 class="absolute top-40 left-10 text-white">SALON PIĘKNOŚCI LEVIRIN</h2>
-    <div class="absolute top-60 left-10 text-white">
-    <h3>Generała Romualda Traugutta 95, 50-417 Wrocław</h3>
-    <h3>Godziny otwarcia: 08:00 - 21:00 </h3>
-    <h3>Telefon: +48 (517) 359-446</h3>
-</div>
-
-<button class="absolute text-base top-96 left-10 w-[160px] h-10 text-center rounded-2xl text-white bg-pink-600"
-type="submit">Zapisać się</button>
-
-
-
-
+<footer>
+    <div class="flex items-center justify-around mx-auto flex-col sm:flex-row relative">
+        <div class="sm:w-1/2">
+            <Image class="w-full" src={rectangle} alt="Rectangle"/>
+        </div>
+        <div class="sm:w-1/2">
+            <Image class="w-full" src={map} alt="Map"/>
+        </div>
+        <div class="absolute mx-auto top-4 sm:left-10 md:top-10 lg:top-16 xl:top-20 md:left-14 lg:left-16 xl:left-20">
+            <Image class="size-32 mb-6" src={CEA} alt="Quality mark"/>
+            <h2 class="text-white mb-4 lg:mb-10 text-xl lg:text-2xl font-semibold">SALON PIĘKNOŚCI LEVIRIN</h2>
+            <div class="text-white text-sm sm:text-xs lg:text-xl mb-6 lg:mb-10">
+                <h3>Generała Romualda Traugutta 95, 50-417 Wrocław</h3>
+                <h3>Godziny otwarcia: 08:00 - 21:00 </h3>
+                <h3>Telefon: +48 (517) 359-446</h3>
+            </div>
+            <button class="w-[200px] h-10 text-center lg:text-xl rounded-2xl text-white bg-pink-600"
+            type="submit">Zapisać się</button>
+         </div>
     </div>
-
-    
-
-
 </footer>

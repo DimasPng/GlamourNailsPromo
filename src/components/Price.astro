@@ -82,15 +82,13 @@ import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.p
                     <li class="flex justify-between border-b border-dashed"><span>Hybrydowy</span><span>110 zł</span>
                     </li>
                 </ul>
-                <div class="hidden lg:block object-cover relative">
-                    <Image src={grayBackground} alt="Background 1" class="hidden lg:inline absolute top-14 -left-12 -z-10"/>
-                    <Image src={priceImg} alt="Hairdresser" class="mx-auto"/>
-                </div>
             </div>
-            <Image src={grayBackground} alt="Background 2" class="hidden lg:inline absolute bottom-0 right-0 -z-10"/>
+            <Image src={grayBackground} alt="Background 1" class="hidden lg:block absolute bottom-28 right-28 -z-10"/>
+            <Image src={priceImg} alt="Hairdresser" class="hidden lg:block absolute bottom-10 right-10 mx-auto max-h-[37rem]"/>
+            <Image src={grayBackground} alt="Background 2" class="hidden lg:block absolute bottom-0 right-0 -z-10"/>
             <button id="open-full-price"
                     class="lg:hidden mb-2.5 mx-auto md:w-72 block text-center font-pt-sans text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-2 px-5 uppercase md:text-xl">
-                Pokaż wszystkie ceny
+                <span class="text-span">Pokaż wszystkie ceny</span>
             </button>
         </div>
     </div>
@@ -100,11 +98,13 @@ import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.p
     const section4 = document.getElementById('section-price-4');
     const section5 = document.getElementById('section-price-5');
     const openBtn = document.getElementById('open-full-price');
+    const textBtn = document.querySelector('.text-span');
 
     openBtn.addEventListener('click', () => {
         section4.classList.toggle('hidden');
         section5.classList.toggle('hidden');
-        openBtn.textContent = openBtn.textContent === "Pokaż wszystkie ceny" ? "Ukryj ceny" : "Pokaż wszystkie ceny";
+
+        textBtn.textContent = textBtn.textContent === "Pokaż wszystkie ceny" ? "Ukryj ceny" : "Pokaż wszystkie ceny";
     })
 </script>
 
@@ -112,7 +112,7 @@ import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.p
     @media (min-width: 1024px) {
         #grid-wrapper {
             grid-template-columns: repeat(2, minmax(0, 28rem));
-            grid-auto-rows: 10rem;
+            grid-auto-rows: 5rem;
         }
     }
 

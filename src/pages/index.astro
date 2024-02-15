@@ -1,24 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Advantages from "../components/Advantages.astro";
 import FirstScreen from "../components/FirstScreen.astro";
-import DarkMode from "../components/DarkMode.astro";
-import Review from "../components/Review.astro"
-import CallToAction from '../components/CallToAction.astro';
-import Promotions from "../components/Promotions.astro";
 import Price from "../components/Price.astro";
-import Test from "../components/Test.astro";
+import Promotions from "../components/Promotions.astro";
+import Advantages from "../components/Advantages.astro";
+import Review from "../components/Review.astro";
+import CallToAction from '../components/CallToAction.astro';
+import Footer from "../components/Footer.astro";
+import DarkMode from "../components/DarkMode.astro";
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <FirstScreen/>
         <Price/>
-        <!--<Test/>-->
         <Promotions/>
         <Advantages/>
         <Review/>
         <CallToAction/>
+        <Footer/>
     </main>
     <DarkMode/>
 </Layout>

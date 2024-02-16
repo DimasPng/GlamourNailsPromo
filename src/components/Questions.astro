@@ -1,21 +1,21 @@
 <section id="question" class="relative bg-image-mobile-question md:bg-image-desktop-question bg-center bg-cover 2xl:h-[800px] p-6 sm:p-14">
     <div class="absolute inset-0 dark:bg-gray-900 opacity-70 z-10"></div>
-    <div class="relative z-20 2xl:py-24 2xl:left-24">
+    <div class="relative z-20 2xl:py-24 2xl:pl-24">
         <h2 class="text-white text-3xl md:text-4xl 2xl:text-5xl md:py-4">Pozostały jakieś pytania?</h2>
-        <h3 class="text-white text-lg lg:text-xl 2xl:text-2xl mb-6 md:mb-10 xl:mb-14 md:w-1/2">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie</h3>
+        <p class="text-white text-lg lg:text-xl 2xl:text-2xl mb-6 md:mb-10 xl:mb-14 md:w-1/2">Zostaw zgłoszenie, oddzwonimy do Ciebie w najbliższym czasie</p>
         <form id="questionForm" class="bg-[#de4c90] dark:bg-gray-900 p-6 md:px-10 max-w-[450px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[640px] 2xl:max-w-[750px] rounded-md" action="" method="">
             <label for="name" class="sr-only">Twoje imię</label>
             <input class="p-3 mb-4 text-md 2xl:text-xl w-full border rounded-lg text-gray-900 leading-tight focus:outline-none"
-                name="name" type="text" placeholder="Twoje imię">
+                id="name" type="text" placeholder="Twoje imię">
             <label for="phone" class="sr-only">Twój numer telefonu</label>
             <input class="p-3 mb-4 text-md 2xl:text-xl w-full border rounded-lg text-gray-900 leading-tight focus:outline-none"
-                name="phone" type="tel" placeholder="Twój numer telefonu">
+                id="phone" type="tel" placeholder="Twój numer telefonu">
             <label for="buttonForm" class="sr-only">Wyślij</label>
             <button id="buttonForm" class="p-3 mb-3 w-full text-md 2xl:text-xl bg-[#4cb274] hover:bg-green-700 dark:bg-pink-700 text-white font-bolt rounded-lg focus:outline-none focus:shadow-2xl"
                 type="submit">Wyślij</button>
             <div class="flex items-center">
-                <input type="checkbox" class="h-3 w-3 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded-lg leading-tight">
-                <label id="agree" class="text-white ms-2 text-md 2xl:text-xl" for="agree">zasubskrybowałam Instagram, -20% zniżki</label>
+                <label for="agree" class="text-white ms-2 text-md 2xl:text-xl">zasubskrybowałam Instagram, -20% zniżki</label>
+                <input type="checkbox" id="agree" class="h-3 w-3 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded-lg leading-tight">
             </div>
         </form>
     </div>

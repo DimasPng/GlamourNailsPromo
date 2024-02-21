@@ -4,12 +4,12 @@ import priceImg from '../assets/images/mainPage/price-img.png';
 import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.png';
 ---
 <section class="p-6 dark:text-gray-200 dark:bg-gray-900">
-    <div class="mx-auto max-w-[1140px]">
+    <div class="mx-auto lg:w-[950px] xl:w-[1100px] 2xl:w-[1200px]">
         <h2 class="uppercase text-3xl font-bold mb-2.5 text-center lg:text-start">CENNIK</h2>
     </div>
-    <div class="max-w-[71.25rem] mx-auto p-6 lg:p-12 border relative">
+    <div class="mx-auto border relative lg:w-[950px] xl:w-[1100px] 2xl:w-[1200px]">
         <div id="grid-wrapper"
-             class="lg:grid grid-rows-3 lg:gap-x-32 lg:grid-flow-dense justify-center">
+             class="lg:grid grid-rows-3 lg:gap-x-28 lg:grid-flow-dense justify-center">
             <div class="mb-6 max-w-[28rem] lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2 lg:w-[20rem] xl:w-[28rem] mx-auto">
                 <h3 class="mb-3 lg:mb-6 text-2xl lg:text-3xl lg:text-start lg:mx-auto font-medium text-center">
                     Manicure</h3>
@@ -84,7 +84,7 @@ import grayBackground from '../assets/images/mainPage/gray-concrete-backgraund.p
                 </ul>
             </div>
             <Image src={grayBackground} alt="Background 1" class="hidden lg:block absolute bottom-28 right-28 -z-10"/>
-            <Image src={priceImg} alt="Hairdresser" class="hidden lg:block absolute bottom-10 right-10 mx-auto max-h-[37rem]"/>
+            <Image src={priceImg} alt="Hairdresser" class="hidden lg:block absolute bottom-10 right-10 mx-auto max-h-[34rem]"/>
             <Image src={grayBackground} alt="Background 2" class="hidden lg:block absolute bottom-0 right-0 -z-10"/>
             <button id="open-full-price"
                     class="lg:hidden mb-2.5 mx-auto md:w-72 block text-center font-pt-sans text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-2 px-5 uppercase md:text-xl">

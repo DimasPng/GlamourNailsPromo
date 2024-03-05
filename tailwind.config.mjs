@@ -8,7 +8,10 @@ export default {
 						'image-desktop': "url('src/assets/images/mainPage/mainBackground.avif')",
 						'image-mobile': "url('src/assets/images/mainPage/mainMin.avif')",
 						'image-desktop-question': "url('src/assets/images/mainPage/background-for-question-section.avif')",
-						'image-mobile-question': "url('src/assets/images/mainPage/background-for-question-section-mobile.avif')"
+						'image-mobile-question': "url('src/assets/images/mainPage/background-for-question-section-mobile.avif')",
+						'image-desktop-first': "url('src/assets/images/permanent/firstScreen.avif')",
+						'image-price': "url('src/assets/images/permanent/price.avif')",
+						
 				},
 				fontFamily: {
 						sans: ["GT Eesti Pro Display", ...defaultTheme.fontFamily.sans],

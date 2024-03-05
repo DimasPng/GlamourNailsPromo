@@ -1,18 +1,25 @@
 ---
 interface Props {
 	title: string;
+	language: string;
+	canonical: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, language, canonical, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={language}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Odkryj Salon Piękności Levirin na Traugutta 95, Wrocław. Najlepszy wybór na Manicure, Pedicure, Stylizację Brwi, Farbowanie i Rzęsy. Tel: +48 (517) 359-446." />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="alternate" hreflang="ru-RU" href="https://levirin.pl/ru/" />
+		<link rel="alternate" hreflang="pl-PL" href="https://levirin.pl/pl/" />
+		<link rel="alternate" hreflang="x-default" href="https://levirin.pl/" />
+		<link rel="canonical" href={canonical} />
 		<title>{title}</title>
 	</head>
 	<body>

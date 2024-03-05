@@ -1,18 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import FirstScreen from "../components/FirstScreen.astro";
-import Price from "../components/Price.astro";
-import Promotions from "../components/Promotions.astro";
-import Advantages from "../components/Advantages.astro";
-import Review from "../components/Review.astro";
-import Questions from '../components/Questions.astro';
-import CallToAction from '../components/CallToAction.astro';
-import Footer from "../components/Footer.astro";
-import Menu from "../components/Menu.astro";
+import FirstScreen from "../components/manicure/FirstScreen.astro";
+import Price from "../components/manicure/Price.astro";
+import Promotions from "../components/manicure/Promotions.astro";
+import Advantages from "../components/manicure/Advantages.astro";
+import Review from "../components/manicure/Review.astro";
+import Questions from '../components/manicure/Questions.astro';
+import CallToAction from '../components/manicure/CallToAction.astro';
+import Footer from "../components/manicure/Footer.astro";
+import Menu from "../components/manicure/Menu.astro";
 ---
-<Layout title="Salon Piękności Levirin Wrocław - Manicure, Pedicure, Brwi">
+<Layout title="Salon Piękności Levirin Wrocław - Manicure, Pedicure, Brwi" language="pl"
+        canonical="https://levirin.pl/"
+        description="Odkryj Salon Piękności Levirin na Traugutta 95, Wrocław. Najlepszy wybór na Manicure, Pedicure, Stylizację Brwi, Farbowanie i Rzęsy. Tel: +48 (517) 359-446.">
+    <Menu/>
     <main>
-        <Menu/>
         <FirstScreen/>
         <Price/>
         <Promotions/>
@@ -20,6 +22,6 @@ import Menu from "../components/Menu.astro";
         <Review/>
         <Questions/>
         <CallToAction/>
-        <Footer/>
     </main>
+    <Footer/>
 </Layout>

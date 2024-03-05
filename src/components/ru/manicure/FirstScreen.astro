@@ -1,9 +1,9 @@
 ---
 import {Image} from 'astro:assets';
 import { Icon } from 'astro-icon/components';
-import logo from '../assets/images/mainPage/logoMax.png';
-import stars from '../assets/images/mainPage/stars.svg';
-import bestChoice from '../assets/images/mainPage/bestChoise.svg';
+import logo from '../../../assets/images/mainPage/logoMax.png';
+import stars from '../../../assets/images/mainPage/stars.svg';
+import bestChoice from '../../../assets/images/mainPage/bestChoise.svg';
 ---
 <section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center min-h-svh p-6 text-neutral-800 pt-9 dark:text-slate-50 md:flex md:items-center md:transform relative">
     <div class="absolute inset-0 dark:bg-gray-900 opacity-90 min-h-svh z-10"></div>
@@ -30,12 +30,12 @@ import bestChoice from '../assets/images/mainPage/bestChoise.svg';
                 <Image src={bestChoice} alt="Star rating" class="size-10 sm:mb-0.5 md:mb-0"/>
                 <span class="font-pt-sans text-sm dark:text-white md:text-xs text-balance">Best choice 2024</span>
             </div>
-            <div class="flex flex-col md:flex-row justify-center ml-auto mr-4">
-                <button class="hidden md:block mr-5 uppercase dark:text-slate-200"><span class="underline cursor-pointer">pl</span> / <span class="cursor-pointer">ua</span></button>
+            <div class="flex flex-col md:flex-row justify-center items-center ml-auto mr-4">
+                <a href="/" class="hidden md:block mr-2 uppercase dark:text-slate-200"><span class="cursor-pointer">pl</span></a> / <a href="/ru" class="hidden md:block mr-5 ml-2 uppercase dark:text-slate-200"><span class="underline cursor-pointer">ru</span></a>
                 <button id="nightMode">
                     <Icon name="daynight" class="size-8 mb-3.5" />
                 </button>
-                <button class="md:hidden uppercase underline dark:text-slate-200">pl</button>
+                <a class="md:hidden uppercase underline dark:text-slate-200">ru</a>
             </div>
         </div>
         <div class="mb-9 md:mb-14">
@@ -45,7 +45,7 @@ import bestChoice from '../assets/images/mainPage/bestChoise.svg';
                 <p class="mb-1"><span class="font-semibold dark:font-normal">Godziny otwarcia:</span> 08:00 - 21:00</p>
                 <p><span class="font-semibold dark:font-normal">Telefon:</span> <a href="tel:+48517359446">+48 (517) 359-446</a></p>
             </div>
-            <h2 class="text-balance font-bold text-3xl md:text-4xl mb-8 md:mb-14 max-w-96">Manicure z gwarancją w studiu Leverin</h2>
+            <h2 class="text-balance font-bold text-3xl md:text-4xl mb-8 md:mb-14 max-w-96">Маникюр с гарантией в студии Leverin</h2>
             <div class="text-balance text-xl md:text-2xl max-w-[32rem]"><span class="font-bold">Akcja:</span> Otrzymaj 60% zniżki przy pierwszej wizycie u
                 wykwalifikowanego mistrza!
             </div>

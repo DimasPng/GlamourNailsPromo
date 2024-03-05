@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FirstScreen from "../../components/ru/manicure/FirstScreen.astro";
+import Price from "../../components/ru/manicure/Price.astro";
+import Promotions from "../../components/ru/manicure/Promotions.astro";
+import Advantages from "../../components/ru/manicure/Advantages.astro";
+import Review from "../../components/ru/manicure/Review.astro";
+import Questions from '../../components/ru/manicure/Questions.astro';
+import CallToAction from '../../components/ru/manicure/CallToAction.astro';
+import Footer from "../../components/ru/manicure/Footer.astro";
+import Menu from "../../components/ru/manicure/Menu.astro";
+---
+<Layout
+        title="Салон красоты Levirin Вроцлав - Маникюр, Педикюр, Брови"
+        language="ru"
+        canonical="https://levirin.pl/ru"
+        description="Откройте для себя салон красоты Levirin на Traugutta 95, Вроцлав. Лучший выбор для маникюра, педикюра, укладки бровей, окраски и ресниц. Тел: +48 (517) 359-446.">
+    <Menu/>
+    <main>
+        <FirstScreen/>
+        <Price/>
+        <Promotions/>
+        <Advantages/>
+        <Review/>
+        <Questions/>
+        <CallToAction/>
+    </main>
+    <Footer/>
+</Layout>

@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FirstScreen from "../components/permanent/FirstScreen.astro";
+import Price from "../components/permanent/Price.astro";
+import Promotions from "../components/permanent/Promotions.astro";
+import Advantages from "../components/permanent/Advantages.astro";
+import Review from "../components/permanent/Review.astro";
+import Questions from '../components/permanent/Questions.astro';
+import CallToAction from '../components/permanent/CallToAction.astro';
+import Footer from "../components/permanent/Footer.astro";
+import Menu from "../components/permanent/Menu.astro";
+---
+<Layout title="Salon Piękności Levirin Wrocław - Manicure, Pedicure, Brwi"
+        language="pl"
+        canonical="https://levirin.pl/permanent"
+        description="">
+    <Menu/>
+    <main>
+        <FirstScreen/>
+        <Price/>
+        <Promotions/>
+        <Advantages/>
+        <Review/>
+        <Questions/>
+        <CallToAction/>
+    </main>
+    <Footer/>
+</Layout>

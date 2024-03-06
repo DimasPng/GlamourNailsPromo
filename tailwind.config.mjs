@@ -12,6 +12,8 @@ export default {
 						'image-desktop-first': "url('src/assets/images/permanent/firstScreen.png')",
 						'image-price': "url('src/assets/images/permanent/price.avif')",
 						'image-lips': "url('src/assets/images/permanent/lips.png')",
+						'image-mobile-first': "url('src/assets/images/permanent/firstScreen-mobile.png')",
+						'image-mobile-first-md': "url('src/assets/images/permanent/firstScreen-md.png')"
 						
 						
 				},

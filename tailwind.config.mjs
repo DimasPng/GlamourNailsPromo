@@ -9,8 +9,10 @@ export default {
 						'image-mobile': "url('src/assets/images/mainPage/mainMin.avif')",
 						'image-desktop-question': "url('src/assets/images/mainPage/background-for-question-section.avif')",
 						'image-mobile-question': "url('src/assets/images/mainPage/background-for-question-section-mobile.avif')",
-						'image-desktop-first': "url('src/assets/images/permanent/firstScreen.avif')",
+						'image-desktop-first': "url('src/assets/images/permanent/firstScreen.png')",
 						'image-price': "url('src/assets/images/permanent/price.avif')",
+						'image-lips': "url('src/assets/images/permanent/lips.png')",
+						
 						
 				},
 				fontFamily: {

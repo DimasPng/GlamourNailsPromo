@@ -5,7 +5,7 @@ import logo from '../../assets/images/mainPage/logoMax.png';
 import stars from '../../assets/images/mainPage/stars.svg';
 import bestChoice from '../../assets/images/mainPage/bestChoise.svg';
 ---
-<section class="bg-image-mobile md:bg-image-desktop bg-cover bg-center min-h-svh p-6 text-neutral-800 pt-9 dark:text-slate-50 md:flex md:items-center md:transform relative">
+<section class="bg-[url('src/assets/images/mainPage/mainMin.avif')] md:bg-[url('src/assets/images/mainPage/mainBackground.avif')] bg-cover bg-center min-h-svh p-6 text-neutral-800 pt-9 dark:text-slate-50 md:flex md:items-center md:transform relative">
     <div class="absolute inset-0 dark:bg-gray-900 opacity-90 min-h-svh z-10"></div>
     <div class="w-full mx-auto relative z-20 lg:w-[950px] xl:w-[1100px] 2xl:w-[1200px]">
         <div class="flex items-center mb-9 md:mb-16">
@@ -31,11 +31,11 @@ import bestChoice from '../../assets/images/mainPage/bestChoise.svg';
                 <span class="font-pt-sans text-sm dark:text-white md:text-xs text-balance">Best choice 2024</span>
             </div>
             <div class="flex flex-col md:flex-row justify-center items-center ml-auto mr-4">
-                <a href="/public" class="hidden underline md:block mr-2 uppercase dark:text-slate-200"><span class="cursor-pointer">pl</span></a> / <a href="/ru" class="hidden md:block mr-5 ml-2 uppercase dark:text-slate-200"><span class="cursor-pointer">ru</span></a>
-                <button id="nightMode">
+                <div class="hidden underline md:block mr-2 uppercase dark:text-slate-200"><span class="cursor-pointer">pl</span></div><span class="hidden md:block"> / </span><a href="/ru" class="hidden md:block mr-5 ml-2 uppercase dark:text-slate-200"><span class="cursor-pointer">ru</span></a>
+                <button id="nightMode" title="Switch Dark Mode">
                     <Icon name="daynight" class="size-8 mb-3.5" />
                 </button>
-                <a class="md:hidden uppercase underline dark:text-slate-200">ru</a>
+                <!--<a class="md:hidden uppercase underline dark:text-slate-200">ru</a>-->
             </div>
         </div>
         <div class="mb-9 md:mb-14">
@@ -46,14 +46,14 @@ import bestChoice from '../../assets/images/mainPage/bestChoise.svg';
                 <p><span class="font-semibold dark:font-normal">Telefon:</span> <a href="tel:+48517359446">+48 (517) 359-446</a></p>
             </div>
             <h2 class="text-balance font-bold text-3xl md:text-4xl mb-8 md:mb-14 max-w-96">Manicure z gwarancją w studiu Leverin</h2>
-            <div class="text-balance text-xl md:text-2xl max-w-[32rem]"><span class="font-bold">Akcja:</span> Otrzymaj 60% zniżki przy pierwszej wizycie u
+            <div class="text-balance text-xl md:text-2xl max-w-[32rem]"><span class="font-bold">Akcja:</span> Otrzymaj 20% zniżki przy pierwszej wizycie u
                 wykwalifikowanego mistrza!
             </div>
         </div>
-        <a class="mb-6 w-64 md:w-72 block text-center text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg md:text-xl">Zapisać
+        <a href="https://booksy.com/pl-pl/14092_levirin_paznokcie_13750_wroclaw" target="_blank" class="mb-6 w-64 md:w-72 flex items-center justify-center text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform uppercase hover:-translate-y-1 p-4  h-14 text-lg md:text-xl">Zapisać
             się</a>
     </div>
-    <a href="#price" class="z-20">
+    <a href="#price" aria-label="Show price section"  class="z-20">
         <Icon name="arrowDown" class="size-9 cursor-pointer mx-auto absolute bottom-0.5 sm:bottom-1 md:size-12 left-1/2 transform -translate-x-1/2" />
     </a>
 </section>

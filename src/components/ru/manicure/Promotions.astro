@@ -1,31 +1,30 @@
 ---
 import {Image} from 'astro:assets';
 import { Icon } from 'astro-icon/components';
-import circleTop from '../../assets/images/mainPage/circle-top.svg';
+import circleTop from '../../../assets/images/mainPage/circle-top.svg';
 import circleDown from '../../../assets/images/mainPage/circle-down.svg';
 ---
-<section id="promotion" class="relative overflow-hidden min-h-svh sm:flex sm:flex-col p-6 md:pt-10 sm:min-h-0 dark:bg-gray-900 ">
+<section id="promotion" class="relative overflow-hidden sm:flex sm:flex-col p-6 md:pt-10 sm:min-h-0 dark:bg-gray-900 ">
     <Image src={circleDown} alt="Decoration circle 1" class="absolute -top-48 -left-48 md:-top-36 md:-left-36" id="circleTop" />
     <Image src={circleDown} alt="Decoration circle 2" class="absolute -bottom-44 -right-44 md:-bottom-40 md:-right-36" id="circleDown" />
 
     <div class="mx-auto container">
-        <h2 class="uppercase font-bold text-2xl xl:text-3xl text-balance mb-6 md:mb-8 text-center dark:text-gray-200">PRZYKUWAJĄCE UWAGĘ OFERTY</h2>
+        <h2 class="uppercase font-bold text-2xl xl:text-3xl text-balance mb-6 md:mb-8 text-center dark:text-gray-200">ИНТЕРЕСНЫЕ ПРЕДЛОЖЕНИЯ</h2>
 
         <div class="hs-accordion-group text-balance mb-6 md:max-w-[46rem] xl:max-w-[56rem] mx-auto" data-hs-accordion-always-open>
             <div class="hs-accordion active" id="hs-basic-always-open-heading-one">
                 <div class="border-t-0.5-slate-600 dark:text-gray-800 border"></div>
                 <button class="hs-accordion-toggle hs-accordion-active:text-pink-600 py-3 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-pink-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-one">
-                    <span class="text-2xl xl:text-3xl">Akcie</span>
+                    <span class="text-2xl xl:text-3xl">Акции</span>
                     <Icon name="openBtn" class="hs-accordion-active:hidden block size-8" />
                     <Icon name="openBtn" class="hs-accordion-active:block hidden size-8 transform -rotate-45" />
                 </button>
                 <div id="hs-basic-always-open-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-one">
                     <ul class="xl:text-lg mb-3 text-gray-800 dark:text-gray-200 leading-tight">
-                        <li class="mb-2">· MANICURE + HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">50 zł.</span></li>
-                        <li class="mb-2">· MANICURE + PEDICURE — <span class="font-semibold">120 zł</span>.</li>
-                        <li class="mb-2">· WYRÓWNANIE — <span class="font-semibold">BEZPŁATNIE</span>.</li>
-                        <li class="mb-2">· MANICURE — <span class="font-semibold">30 zł.</span></li>
-                        <li>· MANICURE + LUXIO HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">80 zł.</span></li>
+                        <li class="mb-2">· Гибридный маникюр, гелевый маникюр у нового мастера - <span class="font-semibold">100 zł.</span></li>
+                        <li class="mb-2">· Наращивание ногтей у <span class="uppercase font-bold">опытного</span> мастера с целью отработки курса новых методов наращивания - <span class="font-semibold">130 zł</span>.</li>
+                        <li class="mb-2">· Наращивание ресниц -  <span class="font-semibold">скидка 20% от прайс-листа на первый визит</span>.</li>
+                        <li class="mb-2">· Перманентный макияж, при записи на две зоны <span class="font-semibold">подарок - межресничная линия.</span></li>
                     </ul>
                 </div>
             </div>
@@ -33,17 +32,15 @@ import circleDown from '../../../assets/images/mainPage/circle-down.svg';
             <div class="hs-accordion" id="hs-basic-always-open-heading-two">
                 <div class="border-t-0.5-slate-600 dark:text-gray-800 border"></div>
                 <button class="hs-accordion-toggle hs-accordion-active:text-pink-600 py-3 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-pink-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-one">
-                    <span class="text-2xl xl:text-3xl">Kompleks usług</span>
+                    <span class="text-2xl xl:text-3xl">Комплекс услуг</span>
                     <Icon name="openBtn" class="hs-accordion-active:hidden block size-8" />
                     <Icon name="openBtn" class="hs-accordion-active:block hidden size-8 transform -rotate-45" />
                 </button>
                 <div id="hs-basic-always-open-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-two">
                     <ul class="xl:text-lg mb-3 text-gray-800 dark:text-gray-200 leading-tight">
-                        <li class="mb-2">· MANICURE + HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">50 zł.</span></li>
-                        <li class="mb-2">· MANICURE + PEDICURE — <span class="font-semibold">120 zł</span>.</li>
-                        <li class="mb-2">· WYRÓWNANIE — <span class="font-semibold">BEZPŁATNIE</span>.</li>
-                        <li class="mb-2">· MANICURE — <span class="font-semibold">30 zł.</span></li>
-                        <li>· MANICURE + LUXIO HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">80 zł.</span></li>
+                        <li class="mb-2">· Маникюр + педикюр - <span class="font-semibold">2 услуги одновременно за 1,5 часа</span></li>
+                        <li class="mb-2">· Маникюр + педикюр + брови - <span class="font-semibold">3 услуги одновременно за 2 часа</span>.</li>
+                        <li class="mb-2">· Педикюр + спа для рук - <span class="font-semibold">2 услуги за 1 час 20 минут</span>.</li>
                     </ul>
                 </div>
             </div>
@@ -51,22 +48,19 @@ import circleDown from '../../../assets/images/mainPage/circle-down.svg';
             <div class="hs-accordion" id="hs-basic-always-open-heading-three">
                 <div class="border-t-0.5-slate-600 dark:text-gray-800 border"></div>
                 <button class="hs-accordion-toggle hs-accordion-active:text-pink-600 py-3 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-pink-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-always-open-collapse-one">
-                    <span class="text-2xl xl:text-3xl">Brwi</span>
+                    <span class="text-2xl xl:text-3xl">Выездные услуги</span>
                     <Icon name="openBtn" class="hs-accordion-active:hidden block size-8" />
                     <Icon name="openBtn" class="hs-accordion-active:block hidden size-8 transform -rotate-45" />
                 </button>
                 <div id="hs-basic-always-open-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-always-open-heading-three">
                     <ul class="xl:text-lg mb-3 text-gray-800 dark:text-gray-200 leading-tight">
-                        <li class="mb-2">· MANICURE + HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">50 zł.</span></li>
-                        <li class="mb-2">· MANICURE + PEDICURE — <span class="font-semibold">120 zł</span>.</li>
-                        <li class="mb-2">· WYRÓWNANIE — <span class="font-semibold">BEZPŁATNIE</span>.</li>
-                        <li class="mb-2">· MANICURE — <span class="font-semibold">30 zł.</span></li>
-                        <li>· MANICURE + LUXIO HYBRYDOWY LAKIER DO PAZNOKCI + WYRÓWNANIE — <span class="font-semibold">80 zł.</span></li>
+                        <li class="mb-2">· Маникюр дома, в больнице или офисе - <span class="font-semibold">от 240 zł</span></li>
+                        <li class="mb-2">· Педикюр дома, в больнице или офисе - <span class="font-semibold">от 250 zł</span>.</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <a class="mb-6 w-64 md:w-72 block text-center mx-auto text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:text-gray-200 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg md:text-xl">Zapisać
+        <a href="https://booksy.com/pl-pl/14092_levirin_paznokcie_13750_wroclaw" target="_blank" class="mb-6 w-64 md:w-72 flex uppercase justify-center items-center text-center mx-auto text-white rounded-3xl bg-pink-600 dark:bg-pink-700 dark:text-gray-200 dark:hover:bg-pink-600 hover:bg-pink-500 hover:shadow hover:cursor-pointer transform transition-transform hover:-translate-y-1 p-4  h-14 text-lg md:text-xl">Zapisać
             się</a>
     </div>
 </section>

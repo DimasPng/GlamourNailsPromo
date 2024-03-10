@@ -46,8 +46,12 @@ import Modals from "./Modals.astro";
     questionForm.addEventListener('submit', (e) => {
         e.preventDefault()
 
-        const name = document.getElementById('name').value.trim();
-        const phone = document.getElementById('phone').value.trim();
+        const nameElement = document.getElementById('name') as HTMLInputElement;
+        const phoneElement = document.getElementById('phone') as HTMLInputElement;
+
+        const name = nameElement.value.trim();
+        const phone = phoneElement.value.trim();
+
 
         const nameError = document.getElementById('nameError');
         const phoneError = document.getElementById('phoneError');
@@ -72,9 +76,12 @@ import Modals from "./Modals.astro";
 
         const windowModalAlert = document.getElementById('modal-alert')
         windowModalAlert.classList.remove('hidden')
-        document.getElementById('name').value = ''
-        document.getElementById('phone').value = ''
-        document.getElementById('agree').checked = false
+        const nameInput = document.getElementById('name') as HTMLInputElement;
+        const phoneInput = document.getElementById('phone') as HTMLInputElement;
+        nameInput.value = '';
+        phoneInput.value = '';
+        const agreeCheckbox = document.getElementById('agree') as HTMLInputElement;
+        agreeCheckbox.checked = false;
         //sending form, in process of work
     })
 </script>
